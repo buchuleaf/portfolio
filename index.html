@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kang - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon Placeholders - Replace with your actual favicons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- End Favicon Placeholders -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': {
+                            '50':  '#f8fafc', '100': '#f1f5f9', '200': '#e2e8f0',
+                            '300': '#cbd5e1', '400': '#94a3b8', '500': '#64748b',
+                            '600': '#475569', '700': '#334155', '800': '#1e293b',
+                            '900': '#0f172a',
+                        },
+                        'brand-accent': '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-brand-primary-600 hover:text-brand-primary-700 transition-colors">
+                DK.
+            </a>
+            <div id="nav-links" class="space-x-1 sm:space-x-2 md:space-x-4">
+                <a href="#summary" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Summary</a>
+                <a href="#skills" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Skills</a>
+                <a href="#experience" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Experience</a>
+                <a href="#projects" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Projects</a>
+                <a href="#education" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Education</a>
+                <a href="#contact" class="px-2 py-2 md:px-3 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-brand-primary-600 transition-colors nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gradient-to-br from-brand-primary-600 to-brand-primary-700 text-white min-h-[75vh] flex items-center justify-center py-20 sm:py-24 section-target">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <div class="mb-6">
+                <!-- Placeholder for an avatar or initials - Consider replacing with an <img> tag for a photo -->
+                <div class="w-24 h-24 sm:w-32 sm:h-32 bg-white/20 rounded-full mx-auto flex items-center justify-center text-4xl sm:text-5xl font-bold text-white mb-4 shadow-lg">
+                    DK
+                </div>
+                <!-- Example for actual photo:
+                <img src="path/to/your-photo.jpg" alt="Daniel Kang" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mx-auto mb-4 shadow-lg object-cover">
+                -->
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 tracking-tight">Daniel Kang</h1>
+            <p class="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl mx-auto">
+                Detail-oriented Computer Science student & aspiring software developer.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#projects" class="bg-white text-brand-primary-600 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-slate-100 shadow-md transition duration-300 transform hover:scale-105">View My Work</a>
+                <!-- Download Resume Button - See instructions below on how to set the path -->
+                <a href="resume.pdf" download="DanielKang_Resume.pdf" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-primary-600 shadow-md transition duration-300 transform hover:scale-105">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="py-16 sm:py-20 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-3 text-center">About Me</h2>
+            <div class="w-20 h-1 bg-brand-primary-500 mx-auto mb-10"></div>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
+                I'm a Computer Science student at California State University, Fullerton. I am eager to leverage my academic knowledge and project experience to contribute to impactful, real-world problems. My goal is to continuously learn, grow within a high-performing team, and improve as a reliable and skilled developer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="bg-slate-100 py-16 sm:py-20 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-3 text-center">Technical Skills</h2>
+            <div class="w-20 h-1 bg-brand-primary-500 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 hover:shadow-2xl transition-shadow duration-300 group">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-brand-primary-500 mr-3 group-hover:text-brand-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-slate-700">Programming Languages</h3>
+                    </div>
+                    <p class="text-slate-600">Java, Python, C++, Pascal, HTML, JavaScript, CSS</p>
+                </div>
+                <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 hover:shadow-2xl transition-shadow duration-300 group">
+                     <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-brand-primary-500 mr-3 group-hover:text-brand-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-slate-700">Web Technologies</h3>
+                    </div>
+                    <p class="text-slate-600">React, NodeJS, PHP, Apache, Supabase, Firebase</p>
+                </div>
+                <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 hover:shadow-2xl transition-shadow duration-300 group">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-brand-primary-500 mr-3 group-hover:text-brand-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-slate-700">Tools & Platforms</h3>
+                    </div>
+                    <p class="text-slate-600">Git, VS Code, Docker, Visual Studio, IntelliJ, Linux</p>
+                </div>
+                <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 hover:shadow-2xl transition-shadow duration-300 group">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 text-brand-primary-500 mr-3 group-hover:text-brand-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4M4 7s0 0 0 0m16 0s0 0 0 0M12 11c-3.582 0-8-.895-8-2M12 11c3.582 0 8-.895 8-2"></path></svg>
+                        <h3 class="text-xl sm:text-2xl font-semibold text-slate-700">Databases</h3>
+                    </div>
+                    <p class="text-slate-600">MySQL, MongoDB, PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-20 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-3 text-center">Experience</h2>
+            <div class="w-20 h-1 bg-brand-primary-500 mx-auto mb-12"></div>
+            <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 border-l-4 border-brand-primary-500">
+                <div class="flex flex-col sm:flex-row justify-between items-start mb-2">
+                    <h3 class="text-2xl font-semibold text-slate-800">Database Administrator</h3>
+                    <span class="text-slate-500 font-medium mt-1 sm:mt-0">August 2017 – September 2020</span>
+                </div>
+                <ul class="list-disc list-inside mt-4 space-y-2 text-lg text-slate-600">
+                    <li>Implemented and managed a MySQL database for ~100 customers.</li>
+                    <li>Significantly improved operational efficiency in customer information management.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-slate-100 py-16 sm:py-20 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-3 text-center">Projects</h2>
+            <div class="w-20 h-1 bg-brand-primary-500 mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-xl rounded-xl flex flex-col hover:border-brand-primary-500 border-2 border-transparent transition-all duration-300 group p-6 sm:p-8">
+                    <!-- Image Removed -->
+                    <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 mb-2 group-hover:text-brand-primary-600 transition-colors">AI Pathfinding Project</h3>
+                    <p class="text-sm text-slate-500 mb-1">Python, PyTorch</p>
+                    <p class="text-sm text-slate-500 mb-4">Jan 2025 – Mar 2025</p>
+                    <ul class="list-disc list-outisde pl-5 space-y-1 text-slate-600 text-sm sm:text-base flex-grow mb-4">
+                        <li>Developed an ML model to generate realistic, human-like mouse cursor trajectories.</li>
+                        <li>Curated and preprocessed a specialized dataset to train the model for realism.</li>
+                    </ul>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white shadow-xl rounded-xl flex flex-col hover:border-brand-primary-500 border-2 border-transparent transition-all duration-300 group p-6 sm:p-8">
+                    <!-- Image Removed -->
+                    <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 mb-2 group-hover:text-brand-primary-600 transition-colors">Product Review Sentiment Classifier</h3>
+                    <p class="text-sm text-slate-500 mb-1">Python, PyTorch</p>
+                    <p class="text-sm text-slate-500 mb-4">Jan 2024 – Mar 2024</p>
+                    <ul class="list-disc list-outisde pl-5 space-y-1 text-slate-600 text-sm sm:text-base flex-grow mb-4">
+                        <li>Developed a sentiment classifier to analyze product review text.</li>
+                        <li>Achieved ~80% accuracy in classifying reviews.</li>
+                        <li>Applied NLP preprocessing techniques and rigorous model evaluation.</li>
+                    </ul>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white shadow-xl rounded-xl flex flex-col hover:border-brand-primary-500 border-2 border-transparent transition-all duration-300 group p-6 sm:p-8">
+                    <!-- Image Removed -->
+                    <h3 class="text-xl sm:text-2xl font-semibold text-slate-700 mb-2 group-hover:text-brand-primary-600 transition-colors">Keyboard & Accessories E-Shop</h3>
+                    <p class="text-sm text-slate-500 mb-1">React, Supabase, Stripe, PostgreSQL</p>
+                    <p class="text-sm text-slate-500 mb-4">Mar 2025 – May 2025</p>
+                    <ul class="list-disc list-outisde pl-5 space-y-1 text-slate-600 text-sm sm:text-base flex-grow mb-4">
+                        <li>Developed a full-stack e-commerce platform for keyboard enthusiasts.</li>
+                        <li>Implemented secure user authentication and robust data management.</li>
+                        <li>Integrated Stripe API for secure and seamless payment processing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 sm:py-20 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-3 text-center">Academics</h2>
+            <div class="w-20 h-1 bg-brand-primary-500 mx-auto mb-12"></div>
+            <div class="bg-white shadow-xl rounded-xl p-6 sm:p-8 border-l-4 border-brand-accent">
+                <h3 class="text-xl sm:text-2xl font-semibold text-slate-800">California State University, Fullerton</h3>
+                <p class="text-lg text-slate-600 mt-1">Bachelor of Science in Computer Science</p>
+                <p class="text-md text-slate-500">Expected Graduation: May 2026</p>
+                <p class="text-md text-slate-500 mt-2"><span class="font-semibold">GPA:</span> 3.8</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gradient-to-br from-brand-primary-700 to-brand-primary-800 text-white py-16 sm:py-24 section-transition section-target">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Contact Me</h2>
+            <div class="space-y-3 mb-8 text-lg">
+                <p>📍 Chino Hills, CA</p>
+                <p>📞 <a href="tel:+19098166444" class="hover:underline hover:text-brand-accent transition-colors">(909) - 816 - 6444</a></p>
+                <p>📧 <a href="mailto:dhkang168@gmail.com" class="hover:underline hover:text-brand-accent transition-colors">dhkang168@gmail.com</a></p>
+            </div>
+            <a href="https://linkedin.com/in/daniel-kang-4b5637200/" target="_blank" rel="noopener noreferrer" class="inline-block bg-brand-accent text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-amber-600 shadow-lg transition duration-300 transform hover:scale-105">
+                Message me on LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 text-center py-8">
+        <p>© <span id="currentYear"></span> Daniel Kang</p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
